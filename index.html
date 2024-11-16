@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>눈을 떠라 에임하이</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+</head>
+<body>
+    <h1>눈을 떠라 에임하이</h1>
+
+    <p>정답을 입력하시오.</p>
+    <p></p>
+    <input type="text" id="answer" placeholder="정답을 입력하세요">
+    <button onclick="checkAnswer()">제출</button>
+    <script>
+        function checkAnswer() {
+            var answer = document.getElementById('answer').value.trim();
+            if (answer === '만일 너희 속에 하나님의 영이 거하시면 너희가 육신에 있지 아니하고 영에 있나니 누구든지 그리스도의 영이 없으면 그리스도의 사람이 아니라') { // 정답을 '89'로 설정
+                window.location.href = 'correct.html';
+            } else {
+                alert('틀렸습니다. 다시 시도해보세요.');
+            }
+        }
+    </script>
+</body>
+</html>
